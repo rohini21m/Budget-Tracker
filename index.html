@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="style37.css" />
+
+<script
+  src="https://kit.fontawesome.com/5765af88bb.js"
+  crossorigin="anonymous"
+></script>
+
+
+
+<title>BUDGETTRACKER</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">EXPENSE TRACKER</div>
+    <div class ="bars">
+    <div class="Balance">BALANCE </div>
+    <div class="value"> $0</div>
+    </div>
+    <div class ="jar">
+      <div class="income">
+        <div class="name">Income  </div>
+        <div class="income-total">$ 0</div>
+      </div>
+      
+      <div class="spends">
+        <div class="name">Spends  </div>
+        <div class="expense-total">$ 0</div>
+        
+      </div>
+    </div>
+   
+    <div class="info">
+      <div class ="box">
+        <h2>YOUR ACCOUNT</h2>
+        <div class="toggle">
+          <div class="tab1">INCOME</div>
+          <div class="tab2">EXPENSES</div>
+          <div class="tab3 active">ALL</div>
+        </div>
+       
+        <div  class="hide" id="income" >
+            <ul  type="none" class="list">
+              <div class="input">
+                <input type="text" id="Income-title-input" name="title" placeholder="INCOME" />
+                <input type="number" id="Income-Amount-input"  name="amount" placeholder="$0" />
+                 <div id='AddIncome'><i class="fa fa-plus-circle"> </i></div>
+            </div>
+          </ul>
+        </div>
+        <div class="hide" id="expense">
+            <ul  type="none" class="list">
+              <div class="input">
+                <input type="text" id="expense-title" name="title" placeholder="EXPENSE" />
+                <input type="number" id="expense-Amount"  name="amount" placeholder="$0" />
+                 <div id='AddExpense'><i class="fa fa-plus-circle"></i></div>            
+            </div>
+            </ul>
+        </div>
+    <div  id="all">
+      <ul class="list"></ul>
+  </div>
+    </div>
+  </div>
+  <script src="ExpenseTracker.js"></script>
+  </body>
+
+  </html>
